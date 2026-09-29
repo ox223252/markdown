@@ -10,16 +10,6 @@ export default class Markdown {
 		this.data.map ( d=>Markdown._convertToHtml ( d ) )
 	}
 
-	get html ( )
-	{
-
-	}
-
-	get txt ( )
-	{
-
-	}
-
 	get md ( )
 	{
 		return this.data.map ( d=>d.found?.[ 0 ] ?? d.t ).join ( "" );
